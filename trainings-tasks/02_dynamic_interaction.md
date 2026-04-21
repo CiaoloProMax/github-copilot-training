@@ -27,7 +27,7 @@ Switching modes and channels intentionally improves speed, accuracy, and clarity
 
 ---
 
-### 💡 Inspiration: Designing Custom Prompt Files
+### 📚 Inspiration: Designing Custom Prompt Files
  
 Prompt Files are how you turn repetitive workflow tasks into standard, reusable commands. This prevents lengthy, complex instructions from being typed repeatedly and ensures standardization for tasks like documentation or custom code audits across the entire codebase. <br> [GitHub Docs: Your First Prompt File](https://docs.github.com/en/copilot/tutorials/customization-library/prompt-files/your-first-prompt-file)
 

@@ -6,7 +6,7 @@
 ## Exercises: Explicit Context-Awareness
 | Step | Feature | Instructions |
 | :--- | :--- | :--- |
-| **1.1** | **Repository Instructions** | 1. **Review:** Open and read the `.github/copilot-instructions.md` file.<br>2. **Chat: Ask:** `Which file must I create next to satisfy Mandatory Coding Guidelines. Please provide the command to create it.` Execute the suggested command. |
+| **1.1** | **Repository Instructions** | 1. **Review:** Open and read the `.github/copilot-instructions.md` file.<br>2. **Chat: Ask:** `Which file must I create next to satisfy Mandatory Coding Guidelines, and please provide the command to create it.` Execute the suggested command. |
 | **1.2** | **Workspace Awareness (`@workspace`)** | **Chat: Ask:** `@workspace what are the two main dependencies listed in pyproject.toml and what is the required Python version?` |
 | **1.3** | **Terminal Help (`@terminal`)** | **Chat: Ask:** `@terminal checkout branch 'bug/diagnostics-error'.` Execute the suggested command. |
 | **1.4** | **Editor Diagnostics (`@vscode`)** | 1. Validate you are on branch `'bug/diagnostics-error'` and open the file `app/main.py`. <br>2. **Chat: Ask:** `@vscode what problems are currently reported in this file??`<br>3. Ask: `@vscode open the Problems panel.`<br>4. Ask: `@vscode can you please fix this issue?` Notice its limitations. |
@@ -16,7 +16,7 @@
 | Step | Feature | Instructions |
 | :--- | :--- | :--- |
 | **1.6** | **Context-Aware Chat** | **Chat: Ask:** `Based on the repository's files, what is the required location for new Pydantic models and what is the rule for function signatures?` |
-| **1.7** | **Context-Aware Code Completions** | 1. Open the newly created `app/models.py` file. <br>2. **Type**: `class TaskCompletionMetrics(BaseModel):`. <br>2. Let Copilot complete the class with appropriate fields. Observe how Copilot infers fields using repository-level context. Accept or refine its suggestion. |
+| **1.7** | **Context-Aware Code Completions** | 1. Open the newly created **`app/models.py`** file. <br>2. **Type**: `class TaskCompletionMetrics(BaseModel):`. <br>2. Let Copilot complete the class with appropriate fields. Observe how Copilot infers fields using repository-level context. Accept or refine its suggestion. |
 | **1.8** | **Challenge: Let Copilot fix your code** | 1. Move all Pydantic models out of `app/main.py` into `app/models.py`. <br>2. Correct `log_task` in `app/main.py`. <br>3. Ensure that the repository's guidelines are beeing followed and no violations remain. |
 
 ---

@@ -18,4 +18,5 @@ Copilot can leverage **global instruction files** and **custom prompts** to unde
 
 ### 🧠 Lesson Learned: Context-Driven Test Generation
 - **Enhancing instructions** ensures AI-generated tests are consistent, correctly placed, and follow naming conventions, fixtures, and framework standards.  
-- **Prompt precision matters:** Even with instruction files, carefully worded prompts avoid scope creep or unintended outputs.
+- **Prompt precision matters:** Even with instruction files, carefully worded prompts avoid scope creep or unintended outputs.  
+
