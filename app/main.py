@@ -1,9 +1,9 @@
-from typing import Dict
+from typing import Dict, Optional
 import asyncio
 from enum import Enum
 from typing import List
 from fastapi import FastAPI
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 class TaskStatus(str, Enum):
     """Available statuses for any task."""
@@ -13,10 +13,10 @@ class TaskStatus(str, Enum):
 
 class DeveloperTask(BaseModel):
     """Model for a single task logged by a developer."""
-    task_id: int
+    task_id: Optional[int] = None
     title: str
     status: TaskStatus = TaskStatus.PENDING
-    hours_spent: float = 0.0
+    hours_spent: float = Field(default=0.0, ge=0.0)
 
 class ProductivityReport(BaseModel):
     """The final calculated report."""
@@ -56,12 +56,13 @@ async def generate_productivity_report() -> ProductivityReport:
         completion_rate=completion_rate
     )
 
+# TODO: Create a new function to print a short summary of the report in a human-readable format. This will be used for logging purposes and should not be exposed as an API endpoint.
 
 # --- FastAPI Initialization and Routes ---
 app = FastAPI(title="Productivity Reporting System")
 
 @app.get("/status")
-def get_status()
+def get_status():
     return {"status": "ok"}
 
 
